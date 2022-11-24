@@ -1,0 +1,12 @@
+@font-face{
+    font-family : 'logo_github_icon';
+    src: url(fonts/fontawesome/webfonts/logo_github_icon_143196.ico);
+}
+@font-face{
+    font-family : 'git-repository';
+    src: url(fonts/fontawesome/webfonts/git-repository-fill.svg);
+}
+@font-face{
+    font-family : 'Fontawesome';
+    src: url(fonts/fontawesome/webfonts/);
+}
