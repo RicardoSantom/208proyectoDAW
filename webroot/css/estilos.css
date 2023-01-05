@@ -11,28 +11,36 @@ html, body {
 }
 body{
     background-color: #EEE9DA;
+    background-image: url("../images/php.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 header{
-    height: 6em;
+    line-height: 4.1rem;
     position: sticky;
     top: 0px;
     font-variant-caps: small-caps;
     z-index: 10;
     width: 100%;
+   background-image: linear-gradient(to left top, #cfb8b5, #d4c1c2, #d8cbce, #dcd4d9, #e1dee1, #d7d4d9, #cdcad2, #c1c0cb, #a2a2b5, #83869f, #636b8a, #425176);
+    opacity: 0.95;
 }
 h1{
     text-align: center;
-    background-color: #AFBACC;
-    color: #516D99;
-    line-height: 1.95em;
+    color:#425176;
+    color: #CCB3AF;
+    line-height: 2.05em;
     text-shadow: 2px 2px 2px #333;
+    text-decoration: #AFBACC underline solid;
 }
 h2{
     text-align: center;
-    background-color: #CCB3AF;
+    color: #83a4c6;
     color: #516D99;
-    line-height: 1.75em;
+    line-height: 2.05em;
     text-shadow: 2px 2px 2px white;
+    text-decoration: #AFBACC underline solid;
 }
 main{
     width: 98%;
@@ -52,13 +60,6 @@ img{
     margin: 0 auto;
     text-align: center;
 }
-/*#div-enlaces{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    position: relative;
-}*/
 .enlaces{
     position: absolute;
     margin: 0 auto;
@@ -94,22 +95,30 @@ ul > li{
     font-size: 28px;
     color: #516D99;
     border: 1px #666666 solid;
-    border-radius: 3%;
+    border-radius: 1%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /*margin: 1em;*/
     line-height: 2.5em;
-    height: 30rem;
+    height: 28rem;
     max-width: 20rem;
     text-shadow: 2px 2px 2px #333;
     background-color: #ffffff;
+    opacity: 0.95;
+    text-align: center;
+    text-transform: uppercase;
 }
 ul li:hover{
-    background: linear-gradient(to top, #ccc,#fff );
-    box-shadow: 4px 12px 16px 4px rgba(0,0,0,0.2);
+    /*background: linear-gradient(to top, #ccc,#fff );*/
+    height: 28.25rem;
+    box-shadow: 4px 12px 16px 4px rgba(0,0,0,0.6);
 }
 .enlaces li a{
+    font-size: 30px;
+    color: #CCB3AF;
     text-decoration: none;
     margin-left: 0.5em;
+}
+.enlaces li a:hover{
+    color: #FFC9B5;
 }
 #github,#linkedin,#curriculum{
     clear: both;
@@ -165,8 +174,8 @@ footer{
     margin-right: auto;
     text-align: center;
     background-color: #516D99;
-    z-index: 2;
     color:#F5FEFF;
+    opacity: 0.9;
     background: rgb(2,0,40);
     background: linear-gradient(90deg, rgba(2,0,40,1) 0%, rgba(81,109,153,1) 100%, rgba(251,250,248,1) 100%);
 }
