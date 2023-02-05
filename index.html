@@ -8,8 +8,7 @@
         <meta name="author" content="Ricardo Santiago Tomé">
         <link rel="stylesheet" href="webroot/css/estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="96x96" href="webroot/images/favicon-96x96.png">
         <title>Index Módulos DAW</title>
     </head>
@@ -19,22 +18,39 @@
             <h2>IES Los Sauces Desarrollo Aplicaciones Web 2022/23</h2>
         </header>
         <main>
+            <div id="divBotonAbrir">
+                <button class="botonAbrir" onclick="openNav()">&#9776; Contenido destacado</button>
+            </div>
+            <div id="idBarraLateral" class="barraLateral">
+                <a href="javascript:void(0)" class="botonCerrar" onclick="closeNav()">&times;</a>
+                <ul class="menu">
+                    <li><p>NOVEDADES</p></li>
+                    <li><a href="208DWESProyectoFinal1/index.php" target="_self">Aplicación Final</a></li>
+                    <li><a href="208DWESproyectoTema5/indexProyectoTema5.php"  target="_self">Proyecto Tema5</a></li>
+                    <li><a href="208DWESproyectoTema3/indexProyectoTema3.php"  target="_self">Proyecto Tema3</a></li>
+                    <li><p>TECNOLOGÍAS USADAS</p></li>
+                    <li><a href="208DWESProyectoFinal1/webroot/media/img/imagenPHP.png" target="blank">PHP</a></li>
+                    <li><a href="208DWESProyectoFinal1/webroot/media/img/imagenMySQL.png" target="blank">MySQL</a></li>
+                    <li><a href="208DWESProyectoFinal1/webroot/media/img/imagenHTML.png" target="blank">HTML 5</a></li>
+                    <li><a href="208DWESProyectoFinal1/webroot/media/img/imagenCSS.png" target="blank">CSS 3</a></li>
+                </ul>
+            </div>
             <ul class="enlaces">
                 <li><a href="208DWESproyectoDWES/index.php" title="Enlace a módulo Desarrollo Web Entorno Servidor">DWES<hr>
-                    <p>Desarrollo Web Entorno Servidor</p>
-                    <img src="/webroot/images/server.jpg" alt="DWES" width="315" height="150"></a>
+                        <p>Desarrollo Web Entorno Servidor</p>
+                        <img src="/webroot/images/server.jpg" alt="DWES" width="270" height="130"></a>
                 </li>
                 <li><a href="208DWECproyectoDWEC/indexDWEC.html" title="Enlace a módulo Desarrollo Web Entorno Cliente">DWEC<hr>
-                    <p>Desarrollo Web Entorno Cliente</p>
-                    <img src="/webroot/images/event.jpg" alt="DWES" width="318" height="210"></a>
+                        <p>Desarrollo Web Entorno Cliente</p>
+                        <img src="/webroot/images/event.jpg" alt="DWES"  width="270" height="130"></a>
                 </li>
                 <li><a href="208DAWproyectoDAW/index.html" title="Enlace a módulo Despliegue Aplicaciones Web">DAW<hr>
-                    <p>Despliegue Aplicaciones Web</p>
-                    <img src="/webroot/images/web.webp" alt="DWES" width="318" height="210"></a>
+                        <p>Despliegue Aplicaciones Web</p>
+                        <img src="/webroot/images/web.webp" alt="DWES"  width="270" height="130"></a>
                 </li>
                 <li><a href="208DIWproyectoDIW/index.php" title="Enlace a módulo Diseño Interfaces Web">DIW<hr>
-                    <p>Diseño Interfaces<br>Web</p>
-                    <img src="/webroot/images/design.jpg" alt="DWES" width="315" height="150"></a>
+                        <p>Diseño Interfaces<br>Web</p>
+                        <img src="/webroot/images/design.jpg" alt="DWES"  width="270" height="130"></a>
                 </li>
             </ul>
         </main>
@@ -45,11 +61,22 @@
             <a href="doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">face</span></a>
             <p>
                 <!--<a href="http://jigsaw.w3.org/css-validator/check/referer">-->
-                    <img style="border:0;width:84px;height:27px"
-                         src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                         alt="¡CSS Válido!">
+                <img style="border:0;width:84px;height:27px"
+                     src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                     alt="¡CSS Válido!">
                 <!--</a>-->
             </p>
         </footer>
+        <script>
+            function openNav() {
+                document.getElementById("idBarraLateral").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("idBarraLateral").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
     </body>
 </html>
