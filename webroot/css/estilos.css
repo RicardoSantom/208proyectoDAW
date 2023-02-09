@@ -111,6 +111,7 @@ main{
     top: 5%;
     font-size: 36px;
     margin-left: 5px;
+    
 }
 .botonAbrir {
     font-size: 20px;
@@ -122,9 +123,13 @@ main{
     z-index: 100;
     position: absolute;
     top: 3%;
-    left: 2%;    
-    border-radius: 3%;
+    left: 2%;
+    border-radius: 5px;
     line-height: 2.5rem;
+    animation-name: backgroundColorPalette;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .botonAbrir:hover {
@@ -134,6 +139,30 @@ main{
 #divBotonAbrir {
     transition: margin-left .5s;
     padding: 20px;
+}
+
+@keyframes backgroundColorPalette {
+    0% {
+        background: rgba(2,0,40,1);
+        font-weight: 600;
+    }
+    25% {
+        background: #cc0066;
+        font-weight: 700;
+    }
+    50% {
+        background: #f7bc19;
+        color:white;
+        font-weight: bold;
+    }
+    75% {
+        background: #425176;
+        font-weight: 700;
+    }
+    100% {
+        background: rgba(2,0,40,1);
+        font-weight: 600;
+    }
 }
 .menu{
     position: absolute;
@@ -238,7 +267,7 @@ hr {
 .enlaces li a:hover{
     color: #FFC9B5;
 }
-#github,#linkedin,#curriculum{
+#github,#linkedin,#curriculum,#rss{
     clear: both;
     text-decoration: none;
 }
@@ -259,7 +288,15 @@ hr {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-#curriculum:before{
+/*#opml:before{
+    color: #FFC9B5;
+    font-family: 'FontaWesome';
+    content: '\f08c';
+    font-size: 2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+#curriculum:before,#rss:before,#opml:before{
     color: #FFC9B5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -267,7 +304,7 @@ hr {
 #linkedin{
     color: #FFC9B5;
 }
-#curriculum span{
+#curriculum span,#rss span,#opml span{
     color: #FFC9B5;
     font-size: 30px;
     padding-top: 10px;
